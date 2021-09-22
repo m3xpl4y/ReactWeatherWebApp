@@ -1,0 +1,9 @@
+.main-container{
+    background-color: #464c58;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 25px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 10px;
+}

@@ -18,8 +18,7 @@ function App(){
         <div className="App">
             <SearchInput locationSetter={setLocationState}/>
             <WeatherCard location={location}/>
-        </div>
-        
+        </div>        
     );}
 
 export default App;

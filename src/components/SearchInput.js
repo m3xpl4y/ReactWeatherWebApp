@@ -8,8 +8,9 @@ export default function SearchInput({ locationSetter }) {
     }, [locationSetter, location]);
 
     return (
-        <div className="m-input">
-            <input onChange={e => setLocation(e.target.value)} className="m-input"
+        
+        <div className="m-input" onKeyPress={e => e.key === 'Enter' && setLocation(e.target.value)}>
+            <input  className="m-input"
             placeholder="Search Location"/>
         </div>
     )

@@ -1,35 +1,16 @@
-import React, { Component, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-export default class SearchInput extends Component{
+export default function SearchInput({ locationSetter }) {
+    const [location, setLocation] = useState();
 
-    constructor() {
-        super()
-        this.state = {
-            location: ''
-        };
-    } 
+    useEffect(() => {
+        locationSetter(location)
+    }, [locationSetter, location]);
 
-    handleChange(e) {
-        this.setState({
-            location: e.target.value
-        });
-    }
-   
-    render(){
-
-        useEffect(() => {
-            locationSetter(location)
-        }, [locationSetter, location]);
-
-        return(
+    return (
         <div className="m-input">
-            <input onChange={e => this.setState({ location: e.target.value })} 
-            value={this.state.location}
-            type="text" className="m-input"
-            placeholder="Search Location"
-            ></input>
+            <input onChange={e => setLocation(e.target.value)} className="m-input"
+            placeholder="Search Location"/>
         </div>
-
-        )    
-        }
-    }
+    )
+}

@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 
 export default class SearchInput extends Component{
+
     constructor() {
         super()
         this.state = {
             location: ''
         };
-    }
-  
+    } 
+
     handleChange(e) {
         this.setState({
             location: e.target.value
@@ -15,6 +16,11 @@ export default class SearchInput extends Component{
     }
    
     render(){
+
+        useEffect(() => {
+            locationSetter(location)
+        }, [locationSetter, location]);
+
         return(
         <div className="m-input">
             <input onChange={e => this.setState({ location: e.target.value })} 

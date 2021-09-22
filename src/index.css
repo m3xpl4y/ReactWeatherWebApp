@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.m-input{
+  text-align: center;
+  padding: 10px;
+  height: auto;
+  border: 0px;
+  background-color: lightgray;
+  outline: none;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+}

@@ -11,10 +11,13 @@ export default class MainWeatherCard extends Component{
         this.fetchData();
         return(
         <div className="main-container">
-            <div >
-                <h1 id="stadtname"></h1>
-                <div id="icon"></div>
-                <h1>Hello World!</h1>
+
+            <div className="container-right">
+            
+                <h2 id="stadtname" className="container-header"></h2>
+
+                <div id="icon" className="container-right"></div>
+                
             </div>
         </div>
         )    
@@ -33,8 +36,8 @@ export default class MainWeatherCard extends Component{
           stadtName += data.name + " " + temp + "°C";
           let link = "<img src='http://openweathermap.org/img/wn/";
           let magnify = "@2x.png'>"
-          document.getElementById("icon").innerHTML = link + weather_icon + magnify;
           document.getElementById("stadtname").innerHTML = stadtName;
+          document.getElementById("icon").innerHTML = link + weather_icon + magnify;
         })};
   }
   

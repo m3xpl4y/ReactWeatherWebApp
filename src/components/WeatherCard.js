@@ -9,7 +9,9 @@ export default class WeatherCard extends Component{
     render(){
     return(
         <div>
-            <MainWeatherCard location={this.props.location}/> 
+            <div className="weather-main">
+                <MainWeatherCard location={this.props.location}/> 
+            </div>
         </div>
     )}
 

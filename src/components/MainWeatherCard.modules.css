@@ -1,9 +1,20 @@
 .main-container{
     background-color: #464c58;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 25px;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    border-radius: 10px;
+    border-radius: 10px;    
+}
+.container-header{
+    margin-left: 2%;
+}
+.container-right{
+    margin: auto;
+    display: flex;
+    margin-right: 0%;
+}
+.container-middle{
+
 }
